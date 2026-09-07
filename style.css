@@ -1,0 +1,161 @@
+body {
+  background: #fdf9ef;
+  font-family: Manrope, sans-serif;
+  color: #424842;
+}
+
+.container {
+  max-width: 1400px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+}
+
+.header {
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 11px #0000001c;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.33;
+  transition: 0.2s;
+  font-family: serif;
+  color: #23422a;
+}
+
+.logo:hover {
+  color: #566342;
+  transform: translateY(-2px);
+}
+
+.navigation {
+  display: none;
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  gap: 1rem;
+  align-items: flex-end;
+  color: #566342;
+}
+
+.navigation a {
+  padding-bottom: 3px;
+  letter-spacing: 1px;
+  transition: 0.1s;
+}
+
+.navigation a:hover {
+  transform: translateY(-2px);
+  color: #23422a;
+}
+
+.navigation .active {
+  color: #23422a;
+  border-bottom: 2px solid #23422a;
+  padding-bottom: 0.25rem;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-right a,
+.header-right svg {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.2s;
+}
+
+.header-right a:hover {
+  color: #566342;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 730px) {
+  .navigation {
+    display: flex;
+  }
+  .header-burger {
+    display: none !important;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background: url(https://picsum.photos/id/1040/800/600) center center / cover;
+}
+
+.hero .container {
+  width: 100%;
+}
+
+.hero-body {
+  background: #fdf9efd0;
+  padding: 2rem;
+  text-align: center;
+  max-width: 672px;
+}
+
+.hero-date {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-block: 1rem 1.5rem;
+  font-family: serif;
+  color: #23422a;
+  line-height: 1;
+}
+
+.hero-description {
+  line-height: 1.6;
+  text-wrap: balance;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  display: block;
+  background: #23422a;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.hero-btn:hover {
+  background: #566342;
+}
+
+@media (min-width: 720px) {
+  .hero {
+    height: 870px;
+    background-image: url(https://picsum.photos/id/1040/2000/870)
+  }
+  .hero-body {
+    padding: 3rem;
+    text-align: left;
+  }
+  .hero-title {
+    font-size: 6rem;
+  }
+  .hero-description {
+    font-size: 1.25rem;
+  }
+  .hero-btn {
+    width: max-content;
+  }
+}
