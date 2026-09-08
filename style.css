@@ -160,3 +160,31 @@ body {
     width: max-content;
   }
 }
+
+
+.section {
+  padding-block: 6rem;
+}
+
+.section-title {
+  font-size: 1.88rem;
+  font-family: serif;
+  margin-bottom: 1rem;
+  color: #23422a;
+}
+
+.section-description {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.section-link {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  margin-bottom: 3rem;
+  display: block;
+  width: max-content;
+}
