@@ -188,3 +188,21 @@ body {
   display: block;
   width: max-content;
 }
+
+.etudes-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.etude {
+  position: relative;
+}
+
+.etude-body {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  background: #EBE8DE;
+  padding: 1rem;
+}
+
