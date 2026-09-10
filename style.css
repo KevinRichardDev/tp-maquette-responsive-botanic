@@ -206,3 +206,18 @@ body {
   padding: 1rem;
 }
 
+.etude-title {
+  font-size: 1.25rem;
+  font-family: serif;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+  color: #23422a;
+}
+
+.etude-description {
+  font-size: 0.63rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #566342;
+}
