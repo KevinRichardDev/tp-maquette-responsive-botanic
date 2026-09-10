@@ -198,6 +198,15 @@ body {
   position: relative;
 }
 
+.etude img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.etude-big img {
+  height: 400px;
+}
+
 .etude-body {
   position: absolute;
   left: 1.5rem;
