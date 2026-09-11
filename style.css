@@ -10,7 +10,6 @@ body {
   margin-inline: auto;
 }
 
-
 .header {
   padding: 1.5rem 1rem;
   display: flex;
@@ -144,7 +143,7 @@ body {
 @media (min-width: 720px) {
   .hero {
     height: 870px;
-    background-image: url(https://picsum.photos/id/1040/2000/870)
+    background-image: url(https://picsum.photos/id/1040/2000/870);
   }
   .hero-body {
     padding: 3rem;
@@ -161,7 +160,6 @@ body {
   }
 }
 
-
 .section {
   padding-block: 6rem;
 }
@@ -175,7 +173,7 @@ body {
 
 .section-description {
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  max-width: 700px;
 }
 
 .section-link {
@@ -184,9 +182,27 @@ body {
   letter-spacing: 1px;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  margin-bottom: 3rem;
   display: block;
   width: max-content;
+  white-space: nowrap;
+}
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 700px) {
+  .section-title {
+    font-size: 2.25rem;
+  }
+  .section-body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }
 
 .etudes-grid {
@@ -211,7 +227,7 @@ body {
   position: absolute;
   left: 1.5rem;
   bottom: 1.5rem;
-  background: #EBE8DE;
+  background: #ebe8de;
   padding: 1rem;
 }
 
@@ -229,4 +245,22 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #566342;
+}
+
+@media (min-width: 820px) {
+  .etudes-grid {
+    grid-template-columns: 850fr 600fr;
+  }
+  .etude-big {
+    grid-row: 1 / span 2;
+  }
+  .etude img {
+    height: 100%;
+  }
+  .etude-title {
+    font-size: 1.5rem;
+  }
+  .etude-description {
+    font-size: 0.75rem;
+  }
 }
