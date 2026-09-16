@@ -165,7 +165,7 @@ body {
 }
 
 .section-dark {
-  background: #DDDAD0;
+  background: #f1eee3;
 }
 
 .section-title {
@@ -272,4 +272,39 @@ body {
   .etude-description {
     font-size: 0.75rem;
   }
+}
+
+.product {
+  display: grid;
+  gap: 2rem;
+}
+
+.product img {
+  margin-bottom: 1rem;
+}
+
+.product-title {
+  font-size: 1.13rem;
+  font-family: serif;
+  line-height: 1.56;
+  margin-bottom: 0.25rem;
+  color: #23422a;
+}
+
+.product-category {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  line-height: 1.33;
+  color: #566342;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1.43;
 }
